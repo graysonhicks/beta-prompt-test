@@ -1,0 +1,33 @@
+{
+  "name": "beta-prompt-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "mastra dev",
+    "build": "mastra build",
+    "start": "mastra start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "dependencies": {
+    "@mastra/core": "^1.0.0-beta.10",
+    "@mastra/evals": "^1.0.0-beta.2",
+    "@mastra/libsql": "^1.0.0-beta.7",
+    "@mastra/loggers": "^1.0.0-beta.3",
+    "@mastra/memory": "^1.0.0-beta.4",
+    "@mastra/observability": "^1.0.0-beta.4",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.2",
+    "mastra": "^1.0.0-beta.8",
+    "typescript": "^5.9.3"
+  }
+}
