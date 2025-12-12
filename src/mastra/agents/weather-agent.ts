@@ -52,4 +52,23 @@ export const weatherAgent = new Agent({
       url: 'file:../mastra.db', // path is relative to the .mastra/output directory
     }),
   }),
+  defaultOptions: {
+    maxSteps: 7,
+    modelSettings: {
+      frequencyPenalty: 0.5,
+      presencePenalty: 0.5,
+      maxOutputTokens: 1000,
+      seed: 123,
+      topK: 2,
+      maxRetries: 3,
+      temperature: 0.8,
+      topP: 0.9,
+    },
+    providerOptions: {
+      openai: {
+        reasoningEffort: 'medium',
+        user: 'test-user-123',
+      },
+    },
+  },
 });
